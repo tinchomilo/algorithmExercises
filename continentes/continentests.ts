@@ -54,7 +54,7 @@ function findRepresents( list: string[], peopleList: Represents[] ): boolean {
 console.log(findRepresents(CONTINENTS, continentsRepresented))
 
 function addGreetings( peopleList: Represents[] ): Represents[] {
-    const newpeopleList = peopleList.map( elem =>{
+    const newpeopleList = peopleList.map( elem => {
         return {
             ...elem,
             greetings: `hi soy ${elem.name} from ${elem.country}`
